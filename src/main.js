@@ -2,8 +2,11 @@ import Vue from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
+import { fetch } from "./assets/js/fetch";
 
 Vue.config.productionTip = false;
+
+Vue.prototype.$fetch = fetch;
 
 new Vue({
   router,
